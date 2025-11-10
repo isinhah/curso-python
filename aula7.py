@@ -1,0 +1,14 @@
+# laços internos (while dentro do while)
+
+qtd_linhas = 2
+qtd_colunas = 2
+
+linha = 1
+
+while linha <= qtd_linhas:
+    coluna = 1
+    while coluna <= qtd_colunas:
+        print(f'{linha: } {coluna: }')
+        coluna += 1
+    linha += 1
+print('acabou')
