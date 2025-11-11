@@ -34,7 +34,7 @@ while True:
 
     print(f'Resultado: {primeiro_numero_float} {operador_escolhido} {segundo_numero_float} = {resultado}')
 
-    sair = input('Deseja sair? [S/N]').lower()
+    sair = input('Deseja sair? [S/N] ').lower()
     if sair == 's':
         print('programa encerrado')
         break
