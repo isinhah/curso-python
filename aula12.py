@@ -1,8 +1,8 @@
-frase = "essa frase é um teste".lower()
+frase = "essa frase é um tEstE".lower()
 
 i = 0
-qtd_apareceu_mais_vezes = 0
-letra_apareceu_mais_vezes = ''
+maior_frequencia  = 0
+letra_mais_frequente = ''
 
 while i < len(frase):
     letra_atual = frase[i]
@@ -11,12 +11,12 @@ while i < len(frase):
         i += 1
         continue
 
-    qtd_apareceu_mais_vezes_atual = frase.count(letra_atual)
+    frequencia_atual  = frase.count(letra_atual)
 
-    if qtd_apareceu_mais_vezes < qtd_apareceu_mais_vezes_atual:
-        qtd_apareceu_mais_vezes = qtd_apareceu_mais_vezes_atual
-        letra_apareceu_mais_vezes = letra_atual
+    if frequencia_atual  < maior_frequencia:
+        maior_frequencia  = frequencia_atual
+        letra_mais_frequente  = letra_atual
 
     i += 1
 
-print(f'a letra que apareceu mais vezes foi: {letra_apareceu_mais_vezes}, ela apareceu {qtd_apareceu_mais_vezes}x')
+print(f'a letra que apareceu mais vezes foi: {letra_mais_frequente}, ela apareceu {maior_frequencia}x')
