@@ -9,3 +9,5 @@ while contagem <= numero_maximo_int:
     resultado = numero_int * contagem
     print(f'{numero_int} x {contagem} = {resultado}')
     contagem += 1
+
+print('acabou')
